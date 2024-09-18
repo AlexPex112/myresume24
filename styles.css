@@ -1,0 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #526a81;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.top-right a {
+  color: #cccac8;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.top-right a:hover {
+  border-bottom: 2px solid #cccac8;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #5a6466;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.navbar ul li a:hover {
+  border-bottom: 2px solid #5a6466;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.left-social {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-social ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-social ul li a {
+  color: #526a81;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.content {
+  text-align: center;
+  max-width: 700px;
+}
+
+h1.gradient-text {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #7da6b9, #63808d, #496f81); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+a.gradient-text {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #7da6b9, #63808d, #496f81); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #526a81;
+}
+
+.details {
+  font-size: 1rem;
+  color: #526a81;
+  margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  h1.gradient-text {
+    font-size: 2.5rem;
+  }
+
+  .navbar ul {
+    gap: 10px;
+  }
+}
